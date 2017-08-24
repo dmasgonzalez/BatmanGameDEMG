@@ -2,12 +2,14 @@
 Diego's Command Additions to Batman Game
 
 Implementation Edits are below: 
+
 /*
     @function moveBgLeft
     @param {number} x
     @returns {number}
     @desc return the input param minus 10 (or some other value that you like)
 */
+
 function moveBgLeft(x) {
     return x - 15;
 }
@@ -23,13 +25,16 @@ function moveBgLeft(x) {
     @returns { object }
     @desc returns all the above params but flips a switch setting val to false
 */
+
 function keyUpHandler( keyCode = 0, 
     upArrowPressed = false, 
     rightArrowPressed = false, 
     downArrowPressed = false, 
     leftArrowPressed = false, 
     shiftKeyPressed = false ) {
+    
     // you need a bunch of if statements here...
+    
     if (keyCode === 38) {
         upArrowPressed = false; 
     }
@@ -66,14 +71,17 @@ function keyUpHandler( keyCode = 0,
     @returns { object }
     @desc returns all the above params but flips a switch setting val to true 
 */
+
 function keyDownHandler( keyCode = 0, 
     upArrowPressed = false, 
     rightArrowPressed = false, 
     downArrowPressed = false, 
     leftArrowPressed = false, 
     shiftKeyPressed = false ) {
-    // you need a bunch of if statements here...
-    if (keyCode === 38) {
+   
+   // you need a bunch of if statements here...
+   
+   if (keyCode === 38) {
         upArrowPressed = true; 
     }
     else if (keyCode === 39) {
